@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-primary: #6f8eff;
+	--color-dark: #1a1a1a;
+}
+
+@layer base {
+	html,
+	body {
+		@apply bg-dark text-white scroll-smooth;
+	}
+
+	::-webkit-scrollbar {
+		@apply w-2;
+	}
+
+	::-webkit-scrollbar-track {
+		@apply rounded-full;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-zinc-700 rounded-full;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		@apply bg-zinc-600;
+	}
+}
