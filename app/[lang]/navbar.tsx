@@ -14,7 +14,13 @@ export default async function Navbar({ lang }: ILang) {
 	return (
 		<nav className="sticky top-0 z-20 flex justify-between items-center bg-dark">
 			<Link href={`/${lang}`}>
-				<Image src={logoUrl[lang]!} alt="Logo" width={75} height={75} />
+				<Image
+					src={logoUrl[lang]!}
+					alt="Logo"
+					width={75}
+					height={55}
+					className="sm:w-24 md:w-28"
+				/>
 			</Link>
 
 			<div className="flex items-center">
